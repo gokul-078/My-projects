@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&family=Barlow+Semi+Condensed:wght@500;600&family=Lexend+Deca&family=Outfit:wght@300;400;600&family=Poppins:wght@200;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Bai Jamjuree', sans-serif;
+    max-width: 1400px;
+}
+header{
+    background: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 680px;
+    margin: auto;
+    padding-top: 40px;
+}
+.logo{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+header h1{
+    text-align: center;
+    margin-bottom: 10px;
+}
+header p{
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+.download{
+    text-align: center;
+    margin-bottom: 80px;
+}
+.download a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 4px solid;
+    letter-spacing: 1px;
+    border-radius: 10em;
+}
+.download .opt1{
+    background-color: hsl(171, 66%, 44%);
+    padding: 15px 35px;
+    margin-right: 10px;
+    border-color: hsl(171, 66%, 40%);
+    box-shadow: 0 10px 30px -5px hsla(171, 66%, 36%, 0.5);
+}
+.download .opt1:hover{
+    opacity: 0.9;
+}
+.download .opt2{
+    background-color: hsl(233, 100%, 69%);
+    padding: 15px 35px;
+    margin-left: 10px;
+    border-color: hsl(233, 100%, 65%);
+    box-shadow: 0 10px 30px -5px hsla(233, 100%, 65%, 0.5);
+}
+.download .opt2:hover{
+    opacity: 0.9;
+}
+.main2{
+    display: block;
+    text-align: center;
+    max-width: 680px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.main2 p{
+    line-height: 1.5;
+    margin-top: 20px;
+}
+.center{
+    display: flex;
+    margin-bottom: 100px;
+}
+.centerimg{
+    width: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.centerimg img{
+  display: block;
+  height: auto;
+  width: 105%;
+  transform: translate(-5%);
+}
+.cencontent{
+    width: 50%;
+    padding: 70px 110px;
+}
+.con1{
+    line-height: 2;
+    margin-bottom: 30px;
+    max-width: 350px;
+}
+.con2{
+    line-height: 2;
+    margin-bottom: 30px;
+    max-width: 350px;
+}
+.con3{
+    line-height: 2;
+    margin-bottom: 30px;
+    max-width: 350px;
+}
+.center1{
+    max-width: 680px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+}
+.center1 h2{
+    margin-bottom: 10px;
+}
+.center1 p{
+    margin-bottom: 50px;
+}
+.cen1img{
+    margin: auto;
+}
+.cen1img img{
+    width: 100%;
+}
+.cen2{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cen2 h2{
+    margin-bottom: 20px;
+}
+.scheme{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+}
+.sh1{
+    text-align: center;
+    padding: 20px;
+    line-height: 1.7;
+}
+.shimg1{
+    margin-bottom:30px;
+}
+.comp{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px,1fr));
+    grid-gap: 80px 100px;
+    padding: 85px;
+}
+.comp img{
+    place-self: center;
+}
+.cen4{
+    max-width: 680px;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+.cen4 h2{
+    margin-bottom: 20px;
+}
+.download1{
+    text-align: center;
+}
+.download1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    border-bottom: 4px solid;
+    letter-spacing: 1px;
+    border-radius: 10em;
+}
+.download1 .opt1a{
+    background-color: hsl(171, 66%, 44%);
+    padding: 15px 35px;
+    margin-right: 10px;
+    border-color: hsl(171, 66%, 40%);
+    box-shadow: 0 10px 30px -5px hsla(171, 66%, 36%, 0.5);
+}
+.download1 .opt1a:hover{
+    opacity: 0.9;
+}
+.download1 .opt2a{
+    background-color: hsl(233, 100%, 69%);
+    padding: 15px 35px;
+    margin-left: 10px;
+    border-color: hsl(233, 100%, 65%);
+    box-shadow: 0 10px 30px -5px hsla(233, 100%, 65%, 0.5);
+}
+.download1 .opt2a:hover{
+    opacity: 0.9;
+}
+.foot{
+    margin-bottom: 150px;
+}
+footer{
+    background-color: hsl(220, 18%, 97%);
+    padding: 45px 100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
+}
+.queries{
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 120px));
+    grid-gap: 20px 70px;
+}
+.queries a{
+    color: hsl(210, 10%, 50%);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.queries a:hover{
+    color: hsl(171, 66%, 44%);
+}
+.apps{
+    place-self: center flex-end;
+}
+.apps a:not(:last-child){
+    margin-right: 20px;
+}
+.apps a:focus{
+    outline: 3px dotted #0005;
+    outline-offset: 5px;
+}
