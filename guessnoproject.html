@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guess Game</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: url(pexels-stephen-niemeier-131017.jpg) ;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            color: white;
+            width: 500px;
+            text-align: center;
+            padding: 20px 20px;
+            background-color: rgba(17, 25, 40, 0.9);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+        
+        h1{
+            margin: 10px;
+            color: bisque;
+        }
+        input{
+            margin: 10px;
+            font-size: 18px;
+            padding: 5px;
+        }
+        p{
+            margin: 10px;
+            font-size: 20px;
+        }
+        #scor1{
+            font-size: 20px;
+            color: rgb(0, 140, 255);
+        }
+        button{
+            font-size: 14px;
+            padding: 5px 15px;
+            font-weight: 700;
+            border-radius: 20px;
+            border: none;
+            background-color: cadetblue;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Guess the Number from 1 to 10</h1>
+        <input id="box" placeholder="Enter a number!">
+        <button id="but" onclick="guess()">Check</button>
+        <p id="ans">You are Right ! /  Wrong !</p>
+        <score id="scor1">Your Score :</score>
+    </div>
+   
+
+    <script>
+        
+        var a=document.getElementById("box")
+        var b=document.getElementById("but")
+        var e=document.getElementById("ans")
+        var w=document.getElementById("scor1")
+
+        var z=Math.random()
+        var x=Math.floor(z*10)+1
+        console.log(x)
+
+        var totalscore=10
+
+        function guess()
+        {
+            var c=a.value
+
+                if(c==x)
+                {
+                    e.style.color = "greenyellow"
+                    console.log("You are right !")
+                    e.textContent="You are Right !"
+                    w.textContent="Your Score : "+totalscore
+                    a.value = ''
+                }
+                else
+                {
+                    e.style.color = "red"
+                    totalscore=totalscore-1   
+                    console.log("You are wrong !")
+                    e.textContent="You are Wrong !"
+                    w.textContent="Your Score : "+totalscore
+                    a.value = ''
+                }
+        }
+    </script>
+</body>
+</html>
